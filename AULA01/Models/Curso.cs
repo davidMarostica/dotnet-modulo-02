@@ -21,17 +21,26 @@ namespace dotnet_modulo_02.Models
             return Alunos.Count;
         }
 
-        public void RemoverAluno(Pessoa aluno)
+        public bool RemoverAluno(Pessoa aluno)
         {
-            Alunos.Remove(aluno);
+            bool removido = Alunos.Remove(aluno);
+            if (removido)
+            {
+                Console.WriteLine($"{aluno.NomeCompleto} foi removido do curso de {Nome}.");
+            }
+            return removido;
         }
 
         public void ListarAlunos()
-        {
-            foreach (Pessoa aluno in Alunos)
+        {   
+            Console.WriteLine($"Alunos do curso de: {Nome}");
+            for (int count = 0; count < Alunos.Count; count++)
             {
-                Console.WriteLine(aluno.NomeCompleto);
+                string texto = $"N⁰ {count + 1} - {Alunos[count].NomeCompleto}";
+                Console.WriteLine(texto);
             }
+
+            Console.WriteLine($"Total de alunos: {Alunos.Count}");
         }
     }
 }
