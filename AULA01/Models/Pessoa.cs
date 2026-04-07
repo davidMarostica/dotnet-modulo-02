@@ -22,8 +22,15 @@ namespace dotnet_modulo_02.Models
                 _nome = value;
             }
         }
-         public string Sobrenome { get; set; }
-        public string  NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+        private string _sobrenome;
+
+            public string Sobrenome
+            {
+                get => _sobrenome.ToUpper();
+                set => _sobrenome = value;
+            }
+
+        public string  NomeCompleto => $"{Nome} {Sobrenome}";
 
         // Propriedade Idade
         public int Idade
