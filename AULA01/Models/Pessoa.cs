@@ -11,8 +11,8 @@ namespace dotnet_modulo_02.Models
         // Propriedade Nome
         public string Nome
         {
-            get => _nome.ToUpper(); 
-            
+            get => _nome.ToUpper();
+
             set
             {
                 if (value == "")
@@ -22,6 +22,8 @@ namespace dotnet_modulo_02.Models
                 _nome = value;
             }
         }
+         public string Sobrenome { get; set; }
+        public string  NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
 
         // Propriedade Idade
         public int Idade
@@ -43,7 +45,7 @@ namespace dotnet_modulo_02.Models
         // Método Apresentar
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos.");
+            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos.");
         }
     }
 }

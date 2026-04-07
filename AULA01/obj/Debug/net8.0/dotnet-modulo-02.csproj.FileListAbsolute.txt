@@ -40,3 +40,4 @@
 /home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA01/obj/Debug/net8.0/dotnet-modulo-02.pdb
 /home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA01/obj/Debug/net8.0/dotnet-modulo-02.genruntimeconfig.cache
 /home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA01/obj/Debug/net8.0/ref/dotnet-modulo-02.dll
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA01/obj/Debug/net8.0/dotnet-modulo-02.sourcelink.json
