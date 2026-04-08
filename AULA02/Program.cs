@@ -2,7 +2,7 @@
 
 try
 {
-    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
     foreach (string linha in linhas)
     {
@@ -13,7 +13,16 @@ catch (FileNotFoundException ex)
 {
     Console.WriteLine($"Arquivo não encontrado: {ex.Message}");
 }
-catch (IOException ex)
+catch (DirectoryNotFoundException ex)
+{
+    Console.WriteLine($"Diretório não encontrado: {ex.Message}");
+}
+catch (Exception ex)
 {
     Console.WriteLine($"Erro de leitura do arquivo: {ex.Message}");
+}
+
+finally
+{
+    Console.WriteLine("Programa finalizado.");
 }
