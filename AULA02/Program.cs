@@ -31,8 +31,12 @@ using System.Collections.Generic;
 //     Console.WriteLine("Programa finalizado.");
 // }
 
+
+
 // new ExemploExcecao().Metodo1();
 
+
+// Fila - FIFO (First In, First Out)
 // Queue<int> fila = new Queue<int>();
 
 // fila.Enqueue(1);
@@ -53,22 +57,59 @@ using System.Collections.Generic;
 //     Console.WriteLine(item);
 // }
 
-Stack<int> pilha = new Stack<int>();
-pilha.Push(1);
-pilha.Push(2);
-pilha.Push(3);
-pilha.Push(4);
-pilha.Push(5);
 
-foreach (int item in pilha)
+//pilha - LIFO (Last In, First Out)
+
+// Stack<int> pilha = new Stack<int>();
+// pilha.Push(1);
+// pilha.Push(2);
+// pilha.Push(3);
+// pilha.Push(4);
+// pilha.Push(5);
+
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento:{pilha.Pop()}");
+
+// pilha.Push(20);
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+
+
+
+Dictionary<string, string> estados = new Dictionary<string, string>();
+
+estados.Add("SP", "São Paulo");
+estados.Add("RJ", "Rio de Janeiro");
+estados.Add("MG", "Minas Gerais");
+
+foreach (KeyValuePair<string, string> item in estados)
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Chave: {item.Key} - Valor: {item.Value}");
 }
 
-Console.WriteLine($"Removendo o elemento:{pilha.Pop()}");
+Console.WriteLine("------------------------------");
 
-pilha.Push(20);
-foreach (int item in pilha)
+estados.Remove("RJ");
+estados["SP"] = "São Paulo - Atualizado";
 {
-    Console.WriteLine(item);
+    foreach (KeyValuePair<string, string> item in estados)
+    {
+        Console.WriteLine($"Chave: {item.Key} - Valor: {item.Value}");
+    }
 }
+
+string chave = "MG";
+if (estados.ContainsKey(chave))
+{
+    Console.WriteLine($"Valor da chave {chave}: {estados[chave]}");
+}
+else
+{
+    Console.WriteLine($"Chave {chave} não encontrada.");
+}   
