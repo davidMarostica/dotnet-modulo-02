@@ -33,22 +33,42 @@ using System.Collections.Generic;
 
 // new ExemploExcecao().Metodo1();
 
-Queue<int> fila = new Queue<int>();
+// Queue<int> fila = new Queue<int>();
 
-fila.Enqueue(1);
-fila.Enqueue(2);
-fila.Enqueue(3);
-fila.Enqueue(4);
-fila.Enqueue(5);
+// fila.Enqueue(1);
+// fila.Enqueue(2);
+// fila.Enqueue(3);
+// fila.Enqueue(4);
+// fila.Enqueue(5);
 
-foreach (int item in fila)
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento:{fila.Dequeue()}");
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+Stack<int> pilha = new Stack<int>();
+pilha.Push(1);
+pilha.Push(2);
+pilha.Push(3);
+pilha.Push(4);
+pilha.Push(5);
+
+foreach (int item in pilha)
 {
     Console.WriteLine(item);
 }
 
-Console.WriteLine($"Removendo o elemento:{fila.Dequeue()}");
+Console.WriteLine($"Removendo o elemento:{pilha.Pop()}");
 
-foreach (int item in fila)
+pilha.Push(20);
+foreach (int item in pilha)
 {
     Console.WriteLine(item);
 }
