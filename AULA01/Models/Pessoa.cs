@@ -22,13 +22,13 @@ namespace dotnet_modulo_02.Models
                 _nome = value;
             }
         }
-        private string _sobrenome;
+    private string _sobrenome;
 
-            public string Sobrenome
-            {
-                get => _sobrenome.ToUpper();
-                set => _sobrenome = value;
-            }
+    public string Sobrenome
+    {
+        get => _sobrenome.ToUpper();
+        set => _sobrenome = value;
+    }
 
         public string  NomeCompleto => $"{Nome} {Sobrenome}";
 
