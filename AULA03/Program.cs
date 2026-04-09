@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using AULA03.Models;
 
 
@@ -13,18 +12,39 @@ using AULA03.Models;
 // Console.WriteLine($"Mensagem: {tupla.Item3}");
 // Console.WriteLine($"Valor: {tupla.Item4}");
 
-LeituraAquivo arquivo = new LeituraAquivo();
-var (success, linhas, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
- 
-if (success)
+// LeituraAquivo arquivo = new LeituraAquivo();
+// var (success, linhas, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+// if (success)
+// {
+//     Console.WriteLine($"Quantidade de linhas: {quantidadeLinhas}");
+//     foreach (string linha in linhas)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Falha ao ler o arquivo.");
+// }
+
+
+
+  class Program
 {
-    Console.WriteLine($"Quantidade de linhas: {quantidadeLinhas}");
-    foreach (string linha in linhas)
+    static void Main()
     {
-        Console.WriteLine(linha);
+        // Criando uma instância com o construtor
+        Pessoa pessoa1 = new Pessoa("david", "aparecido da silva", 30);
+
+        // Usando o desconstrutor para extrair valores
+        (string nome, string sobrenome, int idade) = pessoa1;
+
+        Console.WriteLine($"Nome: {nome}");
+        Console.WriteLine($"Sobrenome: {sobrenome}");
+        Console.WriteLine($"Idade: {idade}");
+
+        // Usando o método Apresentar
+        pessoa1.Apresentar();
     }
-}
-else
-{
-    Console.WriteLine("Falha ao ler o arquivo.");
 }
