@@ -30,21 +30,38 @@ using AULA03.Models;
 
 
 
-  class Program
-{
-    static void Main()
-    {
-        // Criando uma instância com o construtor
-        Pessoa pessoa1 = new Pessoa("david", "aparecido da silva", 30);
+//   class Program
+// {
+//     static void Main()
+//     {
+//         // Criando uma instância com o construtor
+//         Pessoa pessoa1 = new Pessoa("david", "aparecido da silva", 30);
 
-        // Usando o desconstrutor para extrair valores
-        (string nome, string sobrenome, int idade) = pessoa1;
+//         // Usando o desconstrutor para extrair valores
+//         (string nome, string sobrenome, int idade) = pessoa1;
 
-        Console.WriteLine($"Nome: {nome}");
-        Console.WriteLine($"Sobrenome: {sobrenome}");
-        Console.WriteLine($"Idade: {idade}");
+//         Console.WriteLine($"Nome: {nome}");
+//         Console.WriteLine($"Sobrenome: {sobrenome}");
+//         Console.WriteLine($"Idade: {idade}");
 
-        // Usando o método Apresentar
-        pessoa1.Apresentar();
-    }
-}
+//         // Usando o método Apresentar
+//         pessoa1.Apresentar();
+//     }
+// }
+
+int numero = 11;
+bool ehPar = numero % 2 == 0;
+
+// if ternário
+ehPar = numero % 2 == 0;
+
+Console.WriteLine(ehPar ? $" O número {numero} é par." : $" O número {numero} é ímpar.");
+
+// if (numero % 2 == 0)
+// {
+//     Console.WriteLine($"{numero} é par.");
+// }
+// else
+// {
+//     Console.WriteLine($"{numero} é ímpar.");
+// }
