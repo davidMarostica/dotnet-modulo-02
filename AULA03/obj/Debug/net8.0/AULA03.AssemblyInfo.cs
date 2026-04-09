@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("dotnet-modulo-02")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("AULA03")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9e6708d792194b6fccffdd354dd0527701a2cda")]
-[assembly: System.Reflection.AssemblyProductAttribute("dotnet-modulo-02")]
-[assembly: System.Reflection.AssemblyTitleAttribute("dotnet-modulo-02")]
+[assembly: System.Reflection.AssemblyProductAttribute("AULA03")]
+[assembly: System.Reflection.AssemblyTitleAttribute("AULA03")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
