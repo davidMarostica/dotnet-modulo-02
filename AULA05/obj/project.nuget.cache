@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xA46PzSvkVc=",
+  "dgSpecHash": "ThhIJ2yHDCk=",
   "success": true,
   "projectFilePath": "/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/AULA05.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/david/.nuget/packages/newtonsoft.json/13.0.5-beta1/newtonsoft.json.13.0.5-beta1.nupkg.sha512"
+  ],
   "logs": []
 }

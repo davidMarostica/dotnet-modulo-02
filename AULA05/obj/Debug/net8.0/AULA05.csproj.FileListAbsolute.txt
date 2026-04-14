@@ -13,3 +13,6 @@
 /home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.pdb
 /home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.genruntimeconfig.cache
 /home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/ref/AULA05.dll
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.csproj.AssemblyReference.cache
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.csproj.Up2Date

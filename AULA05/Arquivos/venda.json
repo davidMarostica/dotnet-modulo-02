@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "Produto": "Notebook",
+    "Preco": 3500.00,
+    "Quantidade": 2,
+    "DataVenda": "2026-04-14T10:22:56.7995026-03:00",
+    "Total": 7000.00,
+    "Desconto": null
+  },
+  {
+    "Id": 2,
+    "Produto": "Mouse",
+    "Preco": 100.00,
+    "Quantidade": 5,
+    "DataVenda": "2026-04-14T10:22:56.7995026-03:00",
+    "Total": 500.00,
+    "Desconto": 10
+  },
+  {
+    "Id": 3,
+    "Produto": "Teclado",
+    "Preco": 200.00,
+    "Quantidade": 3,
+    "DataVenda": "2026-04-14T10:22:56.7995026-03:00",
+    "Total": 600.00,
+    "Desconto": 5
+  }
+]
