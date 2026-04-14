@@ -1,7 +1,23 @@
-{
-  "Id": 1,
-  "Produto": "Notebook",
-  "Preco": 3500.00,
-  "Quantidade": 2,
-  "Total": 7000.00
-}
+[
+  {
+    "Id": 1,
+    "Produto": "Notebook",
+    "Preco": 3500.00,
+    "Quantidade": 2,
+    "Total": 7000.00
+  },
+  {
+    "Id": 2,
+    "Produto": "Mouse",
+    "Preco": 100.00,
+    "Quantidade": 5,
+    "Total": 500.00
+  },
+  {
+    "Id": 3,
+    "Produto": "Teclado",
+    "Preco": 200.00,
+    "Quantidade": 3,
+    "Total": 600.00
+  }
+]
