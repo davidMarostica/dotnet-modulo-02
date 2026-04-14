@@ -3,25 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Models
+namespace AULA04.Models
 {
-    public class Venda
+   public class Venda
+{
+    public int Id { get; set; }
+    public string Produto { get; set; }
+    public decimal Preco { get; set; }
+    public int Quantidade { get; set; }
+    public DateTime DataVenda { get; set; }
+
+    // Propriedade calculada
+    public decimal Total
     {
-        public Venda(int id, string produto, decimal preco, int quantidade, DateTime dataVenda)
-        {
-            Id = id;
-            Produto = produto;
-            Preco = preco;
-            Quantidade = quantidade;
-            DataVenda = dataVenda;
-        }
-        public int Id { get; set; }
-        public string Produto { get; set; }
-        public decimal Preco { get; set; }
-        public int Quantidade { get; set; }
-        public DateTime DataVenda { get; set; }
-        public decimal Total => Preco * Quantidade;
-        
+        get { return Preco * Quantidade; }
     }
-    
 }
+
+}
+
+        
