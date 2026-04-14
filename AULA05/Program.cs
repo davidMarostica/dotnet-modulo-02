@@ -86,21 +86,30 @@ using Newtonsoft.Json;
 
 //class generica
 
-MeuArray<int> meuArrayInteiro = new MeuArray<int>();
-meuArrayInteiro.AdicionarElementoArray(10);
-meuArrayInteiro.AdicionarElementoArray(20);
-meuArrayInteiro.AdicionarElementoArray(30);
+// MeuArray<int> meuArrayInteiro = new MeuArray<int>();
+// meuArrayInteiro.AdicionarElementoArray(10);
+// meuArrayInteiro.AdicionarElementoArray(20);
+// meuArrayInteiro.AdicionarElementoArray(30);
 
-for (int i = 0; i < 3; i++)
-{
-    Console.WriteLine($"Elemento no índice {i}: {meuArrayInteiro[i]}");
-}
+// for (int i = 0; i < 3; i++)
+// {
+//     Console.WriteLine($"Elemento no índice {i}: {meuArrayInteiro[i]}");
+// }
 
-MeuArray<string> meuArrayString = new MeuArray<string>();
-meuArrayString.AdicionarElementoArray("david");
-meuArrayString.AdicionarElementoArray("silva");
+// MeuArray<string> meuArrayString = new MeuArray<string>();
+// meuArrayString.AdicionarElementoArray("david");
+// meuArrayString.AdicionarElementoArray("silva");
 
-for (int i = 0; i < 2; i++)
-{
-    Console.WriteLine($"Elemento no índice {i}: {meuArrayString[i]}");
-}
+// for (int i = 0; i < 2; i++)
+// {
+//     Console.WriteLine($"Elemento no índice {i}: {meuArrayString[i]}");
+// }
+
+
+int numero = 10;
+bool par = false;
+
+// if ternario
+par = numero.EhPar();
+string mensagem = "o número " + numero + " é par? " + par;
+Console.WriteLine(mensagem);
