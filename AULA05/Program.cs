@@ -22,16 +22,27 @@ using Newtonsoft.Json;
 //     Console.WriteLine("O usuário não respondeu sobre receber email.");
 //}
 
+// Propriedade nullable para desconto
 
-string conteudo = File.ReadAllText("Arquivos/venda.json");
-List<Venda> vendasDesserializadas = JsonConvert.DeserializeObject<List<Venda>>(conteudo);
+// string conteudo = File.ReadAllText("Arquivos/venda.json");
+// List<Venda> vendasDesserializadas = JsonConvert.DeserializeObject<List<Venda>>(conteudo);
 
-foreach (Venda venda in vendasDesserializadas)
-{
-    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, " +
-    $"Preço: {venda.Preco}, Data: {venda.DataVenda}, Quantidade: {venda.Quantidade}," +
-    $"Data de Venda: {venda.DataVenda.ToString("dd/MM/yyyy")}, "+
-    $"Desconto: {(venda.Desconto.HasValue ? venda.Desconto.Value.ToString("C") : "Sem desconto")}, Total: {venda.Total.ToString("C")}"); 
+// foreach (Venda venda in vendasDesserializadas)
+// {
+//     Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, " +
+//     $"Preço: {venda.Preco}, Data: {venda.DataVenda}, Quantidade: {venda.Quantidade}," +
+//     $"Data de Venda: {venda.DataVenda.ToString("dd/MM/yyyy")}, "+
+//     $"Desconto: {(venda.Desconto.HasValue ? venda.Desconto.Value.ToString("C") : "Sem desconto")}, Total: {venda.Total.ToString("C")}"); 
 
 
-}
+// }
+
+
+
+
+// Tipo Anônimo
+var vendaAnonima = new { Nome = "David", Idade = 30, Email = "david@example.com" };
+
+Console.WriteLine($"Nome: {vendaAnonima.Nome}"); 
+Console.WriteLine($"Idade: {vendaAnonima.Idade}");
+Console.WriteLine($"Email: {vendaAnonima.Email}");
