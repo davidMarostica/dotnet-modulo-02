@@ -41,8 +41,33 @@ using Newtonsoft.Json;
 
 
 // Tipo Anônimo
-var vendaAnonima = new { Nome = "David", Idade = 30, Email = "david@example.com" };
 
-Console.WriteLine($"Nome: {vendaAnonima.Nome}"); 
-Console.WriteLine($"Idade: {vendaAnonima.Idade}");
-Console.WriteLine($"Email: {vendaAnonima.Email}");
+// var vendaAnonima = new { Nome = "David", Idade = 30, Email = "david@example.com" };
+
+// Console.WriteLine($"Nome: {vendaAnonima.Nome}"); 
+// Console.WriteLine($"Idade: {vendaAnonima.Idade}");
+// Console.WriteLine($"Email: {vendaAnonima.Email}");
+
+// tipo coleção anônima
+{
+        string conteudo = File.ReadAllText("Arquivos/venda.json");
+
+        List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudo);
+
+        var vendasAnonimas = listaVendas.Select(v => new 
+        { 
+            v.Produto, 
+            v.Preco, 
+            v.Quantidade, 
+            Total = v.Total 
+        });
+
+        Console.WriteLine("-----Vendas Anônimas:---------"); 
+
+        foreach (var venda in vendasAnonimas)
+        {
+            Console.WriteLine(
+                $"Produto: {venda.Produto}, Preço: {venda.Preco}, Quantidade: {venda.Quantidade}, Total: {venda.Total}"
+            );
+        }
+    }
