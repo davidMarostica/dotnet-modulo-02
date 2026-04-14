@@ -49,25 +49,36 @@ using Newtonsoft.Json;
 // Console.WriteLine($"Email: {vendaAnonima.Email}");
 
 // tipo coleção anônima
-{
-        string conteudo = File.ReadAllText("Arquivos/venda.json");
+// {
+//         string conteudo = File.ReadAllText("Arquivos/venda.json");
 
-        List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudo);
+//         List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudo);
 
-        var vendasAnonimas = listaVendas.Select(v => new 
-        { 
-            v.Produto, 
-            v.Preco, 
-            v.Quantidade, 
-            Total = v.Total 
-        });
+//         var vendasAnonimas = listaVendas.Select(v => new 
+//         { 
+//             v.Produto, 
+//             v.Preco, 
+//             v.Quantidade, 
+//             Total = v.Total 
+//         });
 
-        Console.WriteLine("-----Vendas Anônimas:---------"); 
+//         Console.WriteLine("-----Vendas Anônimas:---------"); 
 
-        foreach (var venda in vendasAnonimas)
-        {
-            Console.WriteLine(
-                $"Produto: {venda.Produto}, Preço: {venda.Preco}, Quantidade: {venda.Quantidade}, Total: {venda.Total}"
-            );
-        }
-    }
+//         foreach (var venda in vendasAnonimas)
+//         {
+//             Console.WriteLine(
+//                 $"Produto: {venda.Produto}, Preço: {venda.Preco}, Quantidade: {venda.Quantidade}, Total: {venda.Total}"
+//             );
+//         }
+//     }
+
+// Dynamic  
+
+dynamic variavelDinamica = 4;
+Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+variavelDinamica = "texto";
+Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+variavelDinamica = true;
+Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
