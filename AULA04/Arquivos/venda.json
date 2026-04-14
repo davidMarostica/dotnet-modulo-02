@@ -4,6 +4,7 @@
     "Produto": "Notebook",
     "Preco": 3500.00,
     "Quantidade": 2,
+    "DataVenda": "2026-04-14T09:55:16.6988998-03:00",
     "Total": 7000.00
   },
   {
@@ -11,6 +12,7 @@
     "Produto": "Mouse",
     "Preco": 100.00,
     "Quantidade": 5,
+    "DataVenda": "2026-04-14T09:55:16.6988998-03:00",
     "Total": 500.00
   },
   {
@@ -18,6 +20,7 @@
     "Produto": "Teclado",
     "Preco": 200.00,
     "Quantidade": 3,
+    "DataVenda": "2026-04-14T09:55:16.6988998-03:00",
     "Total": 600.00
   }
 ]

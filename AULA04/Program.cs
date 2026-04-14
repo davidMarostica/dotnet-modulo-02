@@ -2,11 +2,13 @@
 using Models;
 using Newtonsoft.Json;
 
+DateTime dataAtual = DateTime.Now;
+
 List<Venda> listaVendas = new List<Venda>();
 
-Venda venda1 = new Venda(1, "Notebook", 3500.00m, 2);
-Venda venda2 = new Venda(2, "Mouse", 100.00m, 5);
-Venda venda3 = new Venda(3, "Teclado", 200.00m, 3);
+Venda venda1 = new Venda(1, "Notebook", 3500.00m, 2, dataAtual);
+Venda venda2 = new Venda(2, "Mouse", 100.00m, 5, dataAtual);
+Venda venda3 = new Venda(3, "Teclado", 200.00m, 3, dataAtual);
 
 listaVendas.Add(venda1);
 listaVendas.Add(venda2);
