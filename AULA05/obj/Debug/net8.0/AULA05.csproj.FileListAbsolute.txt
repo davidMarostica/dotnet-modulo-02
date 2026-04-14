@@ -1,0 +1,15 @@
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/bin/Debug/net8.0/AULA05
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/bin/Debug/net8.0/AULA05.deps.json
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/bin/Debug/net8.0/AULA05.runtimeconfig.json
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/bin/Debug/net8.0/AULA05.dll
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/bin/Debug/net8.0/AULA05.pdb
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.GeneratedMSBuildEditorConfig.editorconfig
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.AssemblyInfoInputs.cache
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.AssemblyInfo.cs
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.csproj.CoreCompileInputs.cache
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.sourcelink.json
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.dll
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/refint/AULA05.dll
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.pdb
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/AULA05.genruntimeconfig.cache
+/home/david/Área de Trabalho/dotnet/Modulo02/dotnet-modulo-02/AULA05/obj/Debug/net8.0/ref/AULA05.dll
