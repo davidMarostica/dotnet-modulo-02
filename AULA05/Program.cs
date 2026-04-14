@@ -74,11 +74,33 @@ using Newtonsoft.Json;
 
 // Dynamic  
 
-dynamic variavelDinamica = 4;
-Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+// dynamic variavelDinamica = 4;
+// Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
 
-variavelDinamica = "texto";
-Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+// variavelDinamica = "texto";
+// Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
 
-variavelDinamica = true;
-Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+// variavelDinamica = true;
+// Console.WriteLine($"Valor: {variavelDinamica}, Tipo: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+
+//class generica
+
+MeuArray<int> meuArrayInteiro = new MeuArray<int>();
+meuArrayInteiro.AdicionarElementoArray(10);
+meuArrayInteiro.AdicionarElementoArray(20);
+meuArrayInteiro.AdicionarElementoArray(30);
+
+for (int i = 0; i < 3; i++)
+{
+    Console.WriteLine($"Elemento no índice {i}: {meuArrayInteiro[i]}");
+}
+
+MeuArray<string> meuArrayString = new MeuArray<string>();
+meuArrayString.AdicionarElementoArray("david");
+meuArrayString.AdicionarElementoArray("silva");
+
+for (int i = 0; i < 2; i++)
+{
+    Console.WriteLine($"Elemento no índice {i}: {meuArrayString[i]}");
+}
